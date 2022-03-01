@@ -75,7 +75,7 @@ app.post('/approve', (req, res) => {
 	const request_id = req.body.requestId
 
 	if (!users[username]) {
-		res.status(401).send()
+		res.status(400).send()
 		return
 	}
 
